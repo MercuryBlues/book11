@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rq.mapper.BookMapper">
+
+    <resultMap id="bookListMap" type="book">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="author" column="author"></result>
+        <result property="publisher" column="publisher"></result>
+        <result property="lend" column="lend"></result>
+        <result property="lendName" column="username"></result>
+    </resultMap>
+    <select id="getBooklist" parameterType="book" resultMap="bookListMap">
+select  b.id,b.name,b.author,b.publisher,b.lend,u.name username from book b LEFT JOIN state s on bookid=b.id LEFT JOIN user u on s.userid=u.id
+        <where>
+            <if test="name != null and name != ''">
+                and b.name like '%${name}%'
+            </if>
+            <if test="author != null and author !=''">
+                and b.author = '${author}'
+            </if>
+            <if test="lend !=null and lend !=''">
+                and b.lend =#{lend}
+            </if>
+        </where>
+   </select>
+
+    <select id="getBookByid" parameterType="book" resultType="book">
+        select * from book where id=#{id}
+    </select>
+    <delete id="deleteByid" parameterType="book">
+        delete  from  book  where id=#{id}
+    </delete>
+
+    <insert id="Register" parameterType="book">
+        insert into book values(#{id}=null ,#{name},#{author},#{publisher},#{lend})
+    </insert>
+    <update id="updateBook" parameterType="book">
+        update book  set name=#{name},author=#{author},publisher=#{publisher},lend=#{lend} where id=#{id}
+    </update>
+
+    <insert id="lend" parameterType="state">
+    insert into state values(#{id}=null ,#{bookId},#{userId} )
+    </insert>
+    <update id="lendUpdate" parameterType="book">
+    update book  set lend="是" where id=#{id}
+</update>
+    <!--<select id="selectBookByWhere" parameterType="book" resultType="book">-->
+        <!--select * from book-->
+        <!--<where>-->
+            <!--<if test="name != null and name != ''">-->
+            <!--and name like '%${name}%'-->
+            <!--</if>-->
+            <!--<if test="author != null and author !=''">-->
+            <!--and author = '${author}'-->
+            <!--</if>-->
+            <!--<if test="lend !=null and lend !=''">-->
+                <!--and lend =#{lend}-->
+            <!--</if>-->
+        <!--</where>-->
+    <!--</select>-->
+        </mapper>

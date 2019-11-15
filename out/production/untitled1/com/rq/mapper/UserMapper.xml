@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rq.mapper.UserMapper">
+    <select id="Login" parameterType="user" resultType="user">
+     select  * from user where loginName=#{loginName} and password=#{password}
+    </select>
+
+    <select id="getUserlist" resultType="user" parameterType="user">
+      select  * from user
+        <where>
+            <if test="name != null and name != ''">
+                and name like '%${name}%'
+            </if>
+        </where>
+    </select>
+
+    <select id="getUserByid" parameterType="user" resultType="user">
+      select  * from user where id=#{id}
+    </select>
+
+    <update id="updateUser" parameterType="user">
+        update user set name=#{name},sex=#{sex},birth=#{birth},tel=#{tel},home=#{home},power=#{power},headpath=#{headpath} where id=#{id}
+    </update>
+
+    <insert id="RegisterUser" parameterType="user">
+        insert into user value (#{id}=null,#{name},#{loginName},#{password},#{sex},#{birth},#{tel},#{home},#{power})
+    </insert>
+    <delete id="deleteUserByid" parameterType="user">
+        delete from user where id=#{id}
+    </delete>
+
+
+    <update id="modifyPs" parameterType="user">
+        update user set password=#{password} where id =#{id}
+    </update>
+<!--    <select id="selectByWhere" resultType="User">-->
+<!--        select * from user-->
+<!--        <where>-->
+<!--            <if test="user.name != null and user.name != ''">-->
+<!--                and name like '%${user.name}%'-->
+<!--            </if>-->
+<!--        </where>-->
+<!--    </select>-->
+    <!--<select id="selectByWhere" parameterType="user" resultType="user">-->
+        <!--select * from user like #{name}-->
+    <!--</select>-->
+</mapper>

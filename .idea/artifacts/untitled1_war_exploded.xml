@@ -1,0 +1,83 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="untitled1:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/untitled1_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="untitled1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="untitled1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="D:/jstl.jar" />
+          <element id="file-copy" path="D:/junit-4.4.jar" />
+          <element id="file-copy" path="D:/mysql-connector-java-5.1.25-bin.jar" />
+          <element id="file-copy" path="D:/standard.jar" />
+          <element id="file-copy" path="D:/mysql-connector-java-5.1.7-bin.jar" />
+          <element id="file-copy" path="D:/asm-3.3.1.jar" />
+          <element id="file-copy" path="D:/aspectjweaver-1.6.11.jar" />
+          <element id="file-copy" path="D:/cglib-2.2.2.jar" />
+          <element id="file-copy" path="D:/commons-dbcp-1.2.2.jar" />
+          <element id="file-copy" path="D:/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="D:/commons-pool-1.3.jar" />
+          <element id="file-copy" path="D:/javassist-3.17.1-GA.jar" />
+          <element id="file-copy" path="D:/jstl-1.2.jar" />
+          <element id="file-copy" path="D:/junit-4.9.jar" />
+          <element id="file-copy" path="D:/log4j-1.2.17.jar" />
+          <element id="file-copy" path="D:/log4j-api-2.0-rc1.jar" />
+          <element id="file-copy" path="D:/log4j-core-2.0-rc1.jar" />
+          <element id="file-copy" path="D:/mybatis-3.2.7.jar" />
+          <element id="file-copy" path="D:/mybatis-spring-1.2.2.jar" />
+          <element id="file-copy" path="D:/slf4j-api-1.7.5.jar" />
+          <element id="file-copy" path="D:/slf4j-log4j12-1.7.5.jar" />
+          <element id="file-copy" path="D:/spring-aop-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-aspects-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-beans-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-context-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-context-support-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-core-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-expression-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-jdbc-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-jms-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-messaging-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-tx-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-web-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/spring-webmvc-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/asm-3.3.1.jar" />
+          <element id="file-copy" path="D:/tools/aspectjweaver-1.6.11.jar" />
+          <element id="file-copy" path="D:/tools/cglib-2.2.2.jar" />
+          <element id="file-copy" path="D:/tools/commons-dbcp-1.2.2.jar" />
+          <element id="file-copy" path="D:/tools/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="D:/tools/commons-pool-1.3.jar" />
+          <element id="file-copy" path="D:/tools/javassist-3.17.1-GA.jar" />
+          <element id="file-copy" path="D:/tools/jstl-1.2.jar" />
+          <element id="file-copy" path="D:/tools/junit-4.9.jar" />
+          <element id="file-copy" path="D:/tools/log4j-1.2.17.jar" />
+          <element id="file-copy" path="D:/tools/log4j-api-2.0-rc1.jar" />
+          <element id="file-copy" path="D:/tools/log4j-core-2.0-rc1.jar" />
+          <element id="file-copy" path="D:/tools/mybatis-3.2.7.jar" />
+          <element id="file-copy" path="D:/tools/mybatis-spring-1.2.2.jar" />
+          <element id="file-copy" path="D:/tools/mysql-connector-java-5.1.7-bin.jar" />
+          <element id="file-copy" path="D:/tools/slf4j-api-1.7.5.jar" />
+          <element id="file-copy" path="D:/tools/slf4j-log4j12-1.7.5.jar" />
+          <element id="file-copy" path="D:/tools/spring-aop-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-aspects-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-beans-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-context-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-context-support-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-core-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-expression-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-jdbc-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-jms-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-messaging-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-tx-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-web-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/spring-webmvc-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="D:/tools/commons-fileupload-1.2.2.jar" />
+          <element id="file-copy" path="D:/tools/commons-io-2.4.jar" />
+          <element id="file-copy" path="D:/tools/pagehelper-5.1.2.jar" />
+          <element id="file-copy" path="D:/tools/jsqlparser-0.9.5.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
